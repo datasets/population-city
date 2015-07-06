@@ -7,7 +7,7 @@
         "title": "Open Data Commons Public Domain Dedication and Licence 1.0",
         "url": "http://www.opendefinition.org/licenses/odc-pddl"
     },
-    "source": {
+    "sources": {
         "name": "UNData: UNSD Demographic Statistics",
         "web": "http://data.un.org/Data.aspx?d=POP&f=tableCode:240"
     },
