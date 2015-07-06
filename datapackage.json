@@ -23,7 +23,7 @@
 ],
 "resources": [
 {
-"path": "/data/",
+"path": "/data/*.csv",
 "url": "https://github.com/st-martin/citypopulation-year",
 "name": "unsd-citypopulation-year",
 "mediatype": "text/csv",
