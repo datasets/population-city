@@ -7,13 +7,13 @@
     "title": "Open Data Commons Public Domain Dedication and Licence 1.0",
     "url": "http://www.opendefinition.org/licenses/odc-pddl"
   },
-  "sources": {
-  "name": "UNData: UNSD Demographic Statistics",
-  "web": "http://data.un.org/Data.aspx?d=POP&f=tableCode:240"
+  "source": {
+    "name": "UNData: UNSD Demographic Statistics",
+    "web": "http://data.un.org/Data.aspx?d=POP&f=tableCode:240"
   },
-  "contributors": {
-  "name": "Santiago Martin",
-  "email": "hello [at] santimartin [dot] eu"
+  "contributor": {
+    "name": "Santiago Martin",
+    "email": "hello [at] santimartin [dot] eu"
   },
   "resources": [
     {
@@ -71,7 +71,7 @@
         ]
       }
     },
-  {
+    {
     "name": "unsd-citypopulation-year-fm",
     "path": "/data/unsd-citypopulation-year-fm.csv",
     "format": "csv",
