@@ -23,9 +23,61 @@
 ],
 "resources": [
 {
-"path": "/data/*.csv",
-"url": "https://github.com/st-martin/citypopulation-year",
-"name": "unsd-citypopulation-year",
+"name": "unsd-citypopulation-year-both",
+"path": "/data/unsd-citypopulation-year-both.csv",
+"mediatype": "text/csv",
+"encoding": "UTF-8"
+}
+],
+"schema": {
+"fields": [
+{
+"name": "Country or Area",
+"type": "string"
+},
+{
+"name": "Year",
+"type": "number"
+},
+{
+"name": "Area",
+"type": "string"
+},
+{
+"name": "Sex",
+"type": "string"
+},
+{
+"name": "City",
+"type": "string"
+},
+{
+"name": "City type",
+"type": "string"
+},
+{
+"name": "Record Type",
+"type": "string"
+},
+{
+"name": "Reliability",
+"type": "string"
+},
+{
+"name": "Source Year",
+"type": "number"
+},
+{
+"name": "Value",
+"type": "number"
+},
+{
+"name": "Value Footnotes",
+"type": "number"
+},
+{
+"name": "unsd-citypopulation-year-fm",
+"path": "/data/unsd-citypopulation-year-fm.csv",
 "mediatype": "text/csv",
 "encoding": "UTF-8"
 }
