@@ -2,12 +2,12 @@
   "name": "unsd-citypopulation-year",
   "title": "United Nations Statistics Division: City population yearly timeseries",
   "description": "City population yearly timeseries for female and male, and for both sexes, collected by the United Nations Statistics Division and published by UNData in 22 Dec 2014\r\n\r\nNext update in UNdata: Jun 2015 (est.)\r\nPeriodicity: biannual.\r\n\r\nContains two datasets in CSV format:\t\r\nunsd-citypopulation-year-both.csv\t\tSize: 2.4 MB\t\r\nunsd-citypopulation-year-fm.csv\t\tFile size: 3.7 MB\r\n\r\nFinal 222 lines in both datasets contain original notes.",
-  "license": {
+  "licenses": {
     "id": "ODC-PDDL-1.0",
     "title": "Open Data Commons Public Domain Dedication and Licence 1.0",
     "url": "http://www.opendefinition.org/licenses/odc-pddl"
   },
-  "source": {
+  "sources": {
     "name": "UNData: UNSD Demographic Statistics",
     "web": "http://data.un.org/Data.aspx?d=POP&f=tableCode:240"
   },
