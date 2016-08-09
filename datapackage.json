@@ -18,7 +18,7 @@
   "resources": [
     {
       "name": "unsd-citypopulation-year-both",
-      "path": "/data/unsd-citypopulation-year-both.csv",
+      "path": "data/unsd-citypopulation-year-both.csv",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "UTF-8",
@@ -73,7 +73,7 @@
     },
     {
     "name": "unsd-citypopulation-year-fm",
-    "path": "/data/unsd-citypopulation-year-fm.csv",
+    "path": "data/unsd-citypopulation-year-fm.csv",
     "format": "csv",
     "mediatype": "text/csv",
     "encoding": "UTF-8",
