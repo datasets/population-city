@@ -30,7 +30,7 @@
           },
           {
           "name": "Year",
-          "type": "number"
+          "type": "string"
           },
           {
           "name": "Area",
@@ -58,15 +58,15 @@
           },
           {
           "name": "Source Year",
-          "type": "number"
+          "type": "string"
           },
           {
           "name": "Value",
-          "type": "number"
+          "type": "string"
           },
           {
           "name": "Value Footnotes",
-          "type": "number"
+          "type": "string"
           }
         ]
       }
@@ -85,7 +85,7 @@
           },
           {
           "name": "Year",
-          "type": "number"
+          "type": "string"
           },
           {
           "name": "Area",
@@ -113,15 +113,15 @@
           },
           {
           "name": "Source Year",
-          "type": "number"
+          "type": "string"
           },
           {
           "name": "Value",
-          "type": "number"
+          "type": "string"
           },
           {
           "name": "Value Footnotes",
-          "type": "number"
+          "type": "string"
           }
         ]
       }
