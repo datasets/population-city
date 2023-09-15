@@ -1,0 +1,41 @@
+name: Population-city pipeline
+
+on:
+  push:
+    branches:
+      - master
+  
+
+  schedule:
+    - cron: '0 0 1 * *'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup 
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.x
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; 
+          then 
+          pip install -r requirements.txt; fi
+      - name: Run pipe
+        run: |
+          make format
+          make run
+          make clean
+
+      - name: Commit and Push updated data in this repo
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
