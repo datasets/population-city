@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - population_city
 
   schedule:
     - cron: '0 0 1 * *'
@@ -33,13 +34,8 @@ jobs:
           make run
           make clean
 
-      - name: Commit files
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git commit --allow-empty -m "Auto-update of the data package" -a
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.gh }}
+      - name: Commit and Push updated data in this repo
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
