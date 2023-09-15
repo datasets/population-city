@@ -1,0 +1,5 @@
+selenium
+beautifulsoup4
+pandas
+black
+html5lib
