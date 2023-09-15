@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - population_city
 
   schedule:
     - cron: '0 0 1 * *'
