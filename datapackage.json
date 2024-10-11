@@ -32,106 +32,107 @@
       "schema": {
         "fields": [
           {
-          "name": "Country or Area",
-          "type": "string"
+            "name": "Country or Area",
+            "type": "string"
           },
           {
-          "name": "Year",
-          "type": "string"
+            "name": "Year",
+            "type": "string"
           },
           {
-          "name": "Area",
-          "type": "string"
+            "name": "Area",
+            "type": "string"
           },
           {
-          "name": "Sex",
-          "type": "string"
+            "name": "Sex",
+            "type": "string"
           },
           {
-          "name": "City",
-          "type": "string"
+            "name": "City",
+            "type": "string"
           },
           {
-          "name": "City type",
-          "type": "string"
+            "name": "City type",
+            "type": "string"
           },
           {
-          "name": "Record Type",
-          "type": "string"
+            "name": "Record Type",
+            "type": "string"
           },
           {
-          "name": "Reliability",
-          "type": "string"
+            "name": "Reliability",
+            "type": "string"
           },
           {
-          "name": "Source Year",
-          "type": "string"
+            "name": "Source Year",
+            "type": "string"
           },
           {
-          "name": "Value",
-          "type": "string"
+            "name": "Value",
+            "type": "string"
           },
           {
-          "name": "Value Footnotes",
-          "type": "string"
+            "name": "Value Footnotes",
+            "type": "string"
           }
         ]
       }
     },
     {
-    "name": "unsd-citypopulation-year-fm",
-    "path": "data/unsd-citypopulation-year-fm.csv",
-    "format": "csv",
-    "mediatype": "text/csv",
-    "encoding": "UTF-8",
+      "name": "unsd-citypopulation-year-fm",
+      "path": "data/unsd-citypopulation-year-fm.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "UTF-8",
       "schema": {
         "fields": [
           {
-          "name": "Country or Area",
-          "type": "string"
+            "name": "Country or Area",
+            "type": "string"
           },
           {
-          "name": "Year",
-          "type": "string"
+            "name": "Year",
+            "type": "string"
           },
           {
-          "name": "Area",
-          "type": "string"
+            "name": "Area",
+            "type": "string"
           },
           {
-          "name": "Sex",
-          "type": "string"
+            "name": "Sex",
+            "type": "string"
           },
           {
-          "name": "City",
-          "type": "string"
+            "name": "City",
+            "type": "string"
           },
           {
-          "name": "City type",
-          "type": "string"
+            "name": "City type",
+            "type": "string"
           },
           {
-          "name": "Record Type",
-          "type": "string"
+            "name": "Record Type",
+            "type": "string"
           },
           {
-          "name": "Reliability",
-          "type": "string"
+            "name": "Reliability",
+            "type": "string"
           },
           {
-          "name": "Source Year",
-          "type": "string"
+            "name": "Source Year",
+            "type": "string"
           },
           {
-          "name": "Value",
-          "type": "string"
+            "name": "Value",
+            "type": "string"
           },
           {
-          "name": "Value Footnotes",
-          "type": "string"
+            "name": "Value Footnotes",
+            "type": "string"
           }
         ]
       }
     }
-  ]
+  ],
+  "collection": "demographics"
 }
