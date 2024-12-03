@@ -6,8 +6,8 @@ UNSD Demographic Statistics: City population by sex, city and city type.
 Source: [UNData. UNSD Demographic Statistics](http://data.un.org/Data.aspx?d=POP&f=tableCode:240).
 
 Contains two CSV datasets:
-  1. unsd-citypopulation-year-both.csv. Size: 2.4 MB
-  2. unsd-citypopulation-year-fm.csv. Size: 3.7 MB
+  1. unsd-citypopulation-year-both.csv. Size: 4.4 MB
+  2. unsd-citypopulation-year-fm.csv. Size: 6.8 MB
 
 Final 222 lines in both datasets contain original notes.
 
@@ -28,6 +28,11 @@ Run the requirements through `pip` in order to install all required packages to 
 The process is recorded and automated in a Python script:
 
 `scripts/process.py`
+
+## Automation
+
+Up-to-date (auto-updates each 2 month) population-city dataset could be found on the datahub.io:
+https://datahub.io/core/population-city
 
 ## License
 This data package is licensed under a [ODC Public Domain Dedication and Licence (PDDL)](http://opendatacommons.org/licenses/pddl/1.0/).
