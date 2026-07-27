@@ -135,5 +135,9 @@
       }
     }
   ],
-  "collection": "demographics"
+  "collection": "demographics",
+  "has_solutions": [
+    "global-country-region-reference-data",
+    "logistics"
+  ]
 }
