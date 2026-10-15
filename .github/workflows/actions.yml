@@ -34,7 +34,7 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git add data datapackage.json README.md
+          git add data datapackage.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else

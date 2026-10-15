@@ -1,20 +1,25 @@
 {
   "name": "population-city",
-  "last_updated": "2026-02-26",
+  "last_updated": "2026-08-10",
   "title": "City Population Annual Timeseries (UN Statistics Division)",
-  "description": "City population yearly timeseries for female and male, and for both sexes, collected by the United Nations Statistics Division and published by UNData in 22 Dec 2014\r\n\r\nNext update in UNdata: Jun 2015 (est.)\r\nPeriodicity: biannual.\r\n\r\nContains two datasets in CSV format:\t\r\nunsd-citypopulation-year-both.csv\t\tSize: 2.4 MB\t\r\nunsd-citypopulation-year-fm.csv\t\tFile size: 3.7 MB\r\n\r\nFinal 222 lines in both datasets contain original notes.",
+  "description": "Population of cities by year, for both sexes and for females and males, from the UN Statistics Division (UNSD Demographic Statistics, table: City population by sex, city and city type). Each data file comes with a file of the footnotes it refers to.",
   "licenses": [
     {
       "name": "ODC-PDDL-1.0",
-      "path": "http://opendatacommons.org/licenses/pddl/",
-      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+      "path": "https://opendatacommons.org/licenses/pddl/1.0/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0. Applies only to the maintainers' own work (the update script, the column definitions and the file layout). It does not replace the UN data conditions of use; see README.md and ATTRIBUTION.txt."
+    },
+    {
+      "name": "UNdata-conditions-of-use",
+      "path": "https://data.un.org/legacy/Host.aspx?Content=UNdataUse",
+      "title": "UN data conditions of use. They apply to the figures and footnotes in the files in data/. All data may be copied, duplicated and further distributed free of charge, provided UN data is cited as the reference."
     }
   ],
   "sources": [
     {
-      "name": "UNData: UNSD Demographic Statistics",
-      "path": "http://data.un.org/Data.aspx?d=POP&f=tableCode:240",
-      "title": "UNData: UNSD Demographic Statistics"
+      "name": "UN data",
+      "path": "https://data.un.org/legacy/Data.aspx?d=POP&f=tableCode:240",
+      "title": "UN data: UNSD Demographic Statistics, City population by sex, city and city type (table 240)"
     }
   ],
   "contributors": [
@@ -26,111 +31,185 @@
   "resources": [
     {
       "name": "unsd-citypopulation-year-both",
+      "description": "City population for both sexes, one row per figure.",
       "path": "data/unsd-citypopulation-year-both.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "encoding": "UTF-8",
+      "encoding": "utf-8",
       "schema": {
         "fields": [
           {
             "name": "Country or Area",
-            "type": "string"
+            "type": "string",
+            "description": "Country or area, as named by the UN."
           },
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer",
+            "description": "Reference year of the figure."
           },
           {
             "name": "Area",
-            "type": "string"
+            "type": "string",
+            "description": "Part of the city covered, for example Total."
           },
           {
             "name": "Sex",
-            "type": "string"
+            "type": "string",
+            "description": "Both Sexes in the first file; Female or Male in the second."
           },
           {
             "name": "City",
-            "type": "string"
+            "type": "string",
+            "description": "City name, as given by the UN (often in capitals)."
           },
           {
             "name": "City type",
-            "type": "string"
+            "type": "string",
+            "description": "City proper or Urban agglomeration."
           },
           {
             "name": "Record Type",
-            "type": "string"
+            "type": "string",
+            "description": "Kind of record, for example Estimate - de jure or Census - de facto - complete tabulation."
           },
           {
             "name": "Reliability",
-            "type": "string"
+            "type": "string",
+            "description": "Reliability of the figure, for example Final figure, complete or Provisional figure."
           },
           {
             "name": "Source Year",
-            "type": "string"
+            "type": "integer",
+            "description": "Year of the source the figure was taken from."
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "number",
+            "description": "Population. A few figures have a decimal part."
           },
           {
             "name": "Value Footnotes",
-            "type": "string"
+            "type": "string",
+            "description": "Footnote numbers for this figure, separated by commas (for example 4,5); empty when there is none. The numbers are explained in the footnotes file that goes with the data file."
           }
         ]
       }
     },
     {
+      "name": "unsd-citypopulation-year-both-footnotes",
+      "description": "Footnotes for the figures in unsd-citypopulation-year-both.csv.",
+      "path": "data/unsd-citypopulation-year-both-footnotes.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "footnoteSeqID",
+            "type": "string",
+            "description": "Footnote number, as used in the Value Footnotes column of the matching data file."
+          },
+          {
+            "name": "Footnote",
+            "type": "string",
+            "description": "Text of the footnote."
+          }
+        ],
+        "primaryKey": [
+          "footnoteSeqID"
+        ]
+      }
+    },
+    {
       "name": "unsd-citypopulation-year-fm",
+      "description": "City population for females and males, one row per figure.",
       "path": "data/unsd-citypopulation-year-fm.csv",
       "format": "csv",
       "mediatype": "text/csv",
-      "encoding": "UTF-8",
+      "encoding": "utf-8",
       "schema": {
         "fields": [
           {
             "name": "Country or Area",
-            "type": "string"
+            "type": "string",
+            "description": "Country or area, as named by the UN."
           },
           {
             "name": "Year",
-            "type": "string"
+            "type": "integer",
+            "description": "Reference year of the figure."
           },
           {
             "name": "Area",
-            "type": "string"
+            "type": "string",
+            "description": "Part of the city covered, for example Total."
           },
           {
             "name": "Sex",
-            "type": "string"
+            "type": "string",
+            "description": "Both Sexes in the first file; Female or Male in the second."
           },
           {
             "name": "City",
-            "type": "string"
+            "type": "string",
+            "description": "City name, as given by the UN (often in capitals)."
           },
           {
             "name": "City type",
-            "type": "string"
+            "type": "string",
+            "description": "City proper or Urban agglomeration."
           },
           {
             "name": "Record Type",
-            "type": "string"
+            "type": "string",
+            "description": "Kind of record, for example Estimate - de jure or Census - de facto - complete tabulation."
           },
           {
             "name": "Reliability",
-            "type": "string"
+            "type": "string",
+            "description": "Reliability of the figure, for example Final figure, complete or Provisional figure."
           },
           {
             "name": "Source Year",
-            "type": "string"
+            "type": "integer",
+            "description": "Year of the source the figure was taken from."
           },
           {
             "name": "Value",
-            "type": "string"
+            "type": "number",
+            "description": "Population. A few figures have a decimal part."
           },
           {
             "name": "Value Footnotes",
-            "type": "string"
+            "type": "string",
+            "description": "Footnote numbers for this figure, separated by commas (for example 4,5); empty when there is none. The numbers are explained in the footnotes file that goes with the data file."
           }
+        ]
+      }
+    },
+    {
+      "name": "unsd-citypopulation-year-fm-footnotes",
+      "description": "Footnotes for the figures in unsd-citypopulation-year-fm.csv.",
+      "path": "data/unsd-citypopulation-year-fm-footnotes.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "footnoteSeqID",
+            "type": "string",
+            "description": "Footnote number, as used in the Value Footnotes column of the matching data file."
+          },
+          {
+            "name": "Footnote",
+            "type": "string",
+            "description": "Text of the footnote."
+          }
+        ],
+        "primaryKey": [
+          "footnoteSeqID"
         ]
       }
     }

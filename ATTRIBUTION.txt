@@ -1,0 +1,11 @@
+Attribution for population-city
+
+Contains information from UN data, UNSD Demographic Statistics, table "City population by sex, city and city type" (https://data.un.org/legacy/Data.aspx?d=POP&f=tableCode:240), used under the UN data conditions of use (https://data.un.org/legacy/Host.aspx?Content=UNdataUse). The conditions say: "All data and metadata provided on UN data's website are available free of charge and may be copied freely, duplicated and further distributed provided that UN data is cited as the reference."
+
+Citation: UN data, UNSD Demographic Statistics, City population by sex, city and city type, https://data.un.org/legacy/Data.aspx?d=POP&f=tableCode:240
+
+Changes made to the source data: the UN export ends with a table of footnotes. The update script moves that table into its own file next to each data file. Nothing else in the figures is changed.
+
+The UN data conditions say the data are supplied as contained in the source database, and that the UN gives no guarantee of their accuracy or fitness for any purpose.
+
+Not endorsed by, or affiliated with, the United Nations.
