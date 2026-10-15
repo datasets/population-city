@@ -34,7 +34,7 @@ Columns of the footnotes files: `footnoteSeqID` (the footnote number) and `Footn
 
 * The same city can have several rows for the same year, from different sources. They differ in `Record Type`, `Reliability` or `Source Year`. Choose one before you count or compare.
 * A city can be listed both as `City proper` and as `Urban agglomeration`. The agglomeration normally includes the city proper, so adding the two counts people twice.
-* Footnote numbers belong to one file. Number `4` in the first file does not mean the same as number `4` in the second. Use the footnotes file that goes with the data file.
+* Footnote numbers belong to one file. Number `4` in the first file does not mean the same as number `4` in the second. The UN can also number its footnotes differently each time the data is exported, so a number can change when the data is rebuilt. Always use the footnotes file that was committed with the data file.
 * `Value Footnotes` can hold several numbers in one cell (`4,5`). Split it on commas before you look the numbers up.
 * All fields are in quotes and lines end with a carriage return and a line feed (`\r\n`), as in the UN export. Any CSV reader handles this.
 * With pandas: `pd.read_csv("data/unsd-citypopulation-year-both.csv")`. `Year`, `Source Year` and `Value` are numbers.
